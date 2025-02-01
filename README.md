@@ -10,7 +10,7 @@ for now this project uses the following dependencies:
 
 - Spring Web
 - Spring Data JDBC
-- PostgreSQL Database
+- MySQL Database
 
 
 ## Running the application
@@ -25,7 +25,7 @@ You can run this application from your favorite IDE or by running the following 
 
 This application uses Junit 5 and [Tescontainers](https://www.testcontainers.org/). To run the tests you will need Docker
 desktop installed and running. You need Docker to execute the tests because this application uses Testcontainers to spin
-up PostgreSQL database. This allows us to test as close to production as possible on our development machines as well as
+up MySQL database. This allows us to test as close to production as possible on our development machines as well as
 a clean and reproducible testing environment each time.
 
 ## Building for Production

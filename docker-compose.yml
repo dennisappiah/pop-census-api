@@ -1,16 +1,12 @@
 services:
   database:
-    image: postgres
+    image: mysql:8.0
     container_name: census-container
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
-      POSTGRES_DB: census-db
-    volumes:
-        - census-container-volume:/var/lib/postgresql/data
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: census-db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
     ports:
-      - "5432:5432"
-    restart: unless-stopped
+      - "3306:3306"
 
-volumes:
-  census-container-volume:
