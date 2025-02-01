@@ -1,0 +1,16 @@
+services:
+  database:
+    image: postgres
+    container_name: census-container
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: census-db
+    volumes:
+        - census-container-volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  census-container-volume:
