@@ -1,13 +1,11 @@
 package com.example.populationcensus;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.Test;
 
-@SpringBootTest
-class PopulationcensusApplicationTests {
+public class PopulationcensusApplicationTests {
 
 	@Test
-	void contextLoads() {
+    public void contextLoads() {
 	}
 
 }
